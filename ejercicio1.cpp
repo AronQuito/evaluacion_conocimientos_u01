@@ -18,6 +18,10 @@ int main(){
     case '/':
         r=op1/op2;
         break;
+    default:
+        cout<<"Valor mal desconocido";
+        r=0;
+        break;
     }
 
     cout<<"r"; // respuesta
