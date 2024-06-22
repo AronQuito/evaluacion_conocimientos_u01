@@ -12,7 +12,9 @@ int main(){
         system("cls");
         switch (opc){
         case 1:
-            cout<<"Introduce los numeros a operar y el operador [numero 1, operador , numero 2 ]: "; cin>>op1>>op>>op2; // introducir 2 operadores y op (la operacion)
+            cout<<"Introduce el numero 1: "; cin>>op1;
+            cout<<"Introduce el numero 2: "; cin>>op2;
+            cout<<"Introduce el operador: "; cin>>op; 
             system("cls");
             switch (op){
             case '+':
