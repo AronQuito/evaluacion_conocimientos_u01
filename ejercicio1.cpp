@@ -8,23 +8,28 @@ int main(){
     switch (op){
     case '+':
         r=op1+op2;
+        cout<<"La respuesta es: "<<r;
         break;
     case '-':
         r= op1-op2;
+        cout<<"La respuesta es: "<<r;
         break;
     case '*':
         r=op1*op2;
+        cout<<"La respuesta es: "<<r;
         break;
     case '/':
-        r=op1/op2;
+        if(op2!=0){
+            r=op1/op2;
+            cout<<"La respuesta es: "<<r;
+        }else{
+            cout<<"Valor indefinido ( numero 2 = 0 )";
+        }
         break;
     default:
-        cout<<"Valor desconocido"<<endl;
-        r=0;
+        cout<<"Valor desconocido";
         break;
     }
-
-    cout<<"La respuesta es: "<<r; // respuesta
 
     return 0;
 }
