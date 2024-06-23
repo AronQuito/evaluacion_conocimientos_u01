@@ -5,9 +5,9 @@ float factorial(int);
 int main(){
     float sum;
     int n;
-    cin>>n;
+    cout<<"Introduce el numero del ultimo termino de la sucesion: ";cin>>n;
     sum=suma(n);
-    cout<<sum;
+    cout<<"La suma de los numeros hasta la sucesion "<<n<<" es: "<<sum;
     return 0;
 }
 
