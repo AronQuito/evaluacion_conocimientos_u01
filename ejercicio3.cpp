@@ -6,8 +6,12 @@ int main(){
     float sum;
     int n;
     cout<<"Introduce el numero del ultimo termino de la sucesion: ";cin>>n;
-    sum=suma(n);
-    cout<<"La suma de los numeros hasta la sucesion "<<n<<" es: "<<sum;
+    if (n>=1){
+        sum=suma(n);
+        cout<<"La suma de los numeros hasta la sucesion "<<n<<" es: "<<sum;
+    }else{
+        cout<<"Ese termino de la sucesion no existe";
+    }
     return 0;
 }
 
